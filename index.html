@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/43eab3176c.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -29,6 +31,19 @@
             <a href="#featuredbooks" class="books__color">Books</a>
           </li>
         </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul>
+            <li class="menu__list"><a href="#" class="menu__link nav__links--white" onclick="closeMenu()">Home</a></li>
+            <li class="menu__list"><a href="#featuredbooks" class="menu__link nav__links--white" onclick="closeMenu()">Books</a></li>
+            <li class="menu__list"><a  href="#" class="menu__link nav__links--white" onclick="closeMenu()">Contact</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="aboutme">
         <div class="aboutme__description">
@@ -37,7 +52,6 @@
               >Australia's most awarded online library platform</span
             >
           </h1>
-          <h1></h1>
           <h2 class="subheading">
             <span class="span__features--subtitle"
               >Find your dream book with Library</span
@@ -126,7 +140,7 @@
             <div class="rating__black">🟊🟊🟊🟊🟊</div>
             <div class="featbooks__span--container">
               <span class="featbooks__span--style">$59.99</span
-              ><span><b>$14.99</b></span>
+              ><span class="featbooks__span--style2"><b>$14.99</b></span>
             </div>
           </div>
         </div>
@@ -141,7 +155,7 @@
             <div class="rating__black">🟊🟊🟊🟊🟊</div>
             <div class="featbooks__span--container">
               <span class="featbooks__span--style">$39.99</span
-              ><span><b>$13.99</b></span>
+              ><span class="featbooks__span--style2"><b>$13.99</b></span>
             </div>
           </div>
         </div>
@@ -156,7 +170,7 @@
             <div class="rating__black">🟊🟊🟊</div>
             <div class="featbooks__span--container">
               <span class="featbooks__span--style">$49.99</span
-              ><span><b>$10.99</b></span>
+              ><span class="featbooks__span--style2"><b>$10.99</b></span>
             </div>
           </div>
         </div>
@@ -171,7 +185,7 @@
             <div class="rating__black">🟊🟊🟊🟊</div>
             <div class="featbooks__span--container">
               <span class="featbooks__span--style">$39.99</span
-              ><span><b>$22.99</b></span>
+              ><span class="featbooks__span--style2"><b>$22.99</b></span>
             </div>
           </div>
         </div>
@@ -188,7 +202,7 @@
             <img src="book-1.jpeg" alt="" class="latest__feature--image" />
             <h1 class="latest__feature--heading">The 10X Rule</h1>
             <div class="rating">⭐⭐⭐</div>
-            <span><b>$59.99</b></span>
+            <span class="latest__span--style2"><b>$59.99</b></span>
           </div>
         </div>
         <div class="latest__feature">
@@ -196,7 +210,7 @@
             <img src="book-2.jpeg" alt="" class="latest__feature--image" />
             <h1 class="latest__feature--heading">Be Obssessed Or Be Average</h1>
             <div class="rating">⭐⭐⭐⭐</div>
-            <span><b>$49.99</b></span>
+            <span class="latest__span--style2"><b>$49.99</b></span>
           </div>
         </div>
         <div class="latest__feature">
@@ -204,7 +218,7 @@
             <img src="book-3.jpeg" alt="" class="latest__feature--image" />
             <h1 class="latest__feature--heading">Rich Dad Poor Dad</h1>
             <div class="rating">⭐⭐⭐⭐⭐</div>
-            <span><b>$39.99</b></span>
+            <span class="latest__span--style2"><b>$39.99</b></span>
           </div>
         </div>
         <div class="latest__feature">
@@ -212,7 +226,7 @@
             <img src="book-4.jpeg" alt="" class="latest__feature--image" />
             <h1 class="latest__feature--heading">Cashflow Quadrant</h1>
             <div class="rating">⭐⭐⭐⭐</div>
-            <span><b>$29.99</b></span>
+            <span class="latest__span--style2"><b>$29.99</b></span>
           </div>
         </div>
         <div class="latest__feature">
@@ -220,7 +234,7 @@
             <img src="book-5.jpeg" alt="" class="latest__feature--image" />
             <h1 class="latest__feature--heading">48 Laws of Power</h1>
             <div class="rating">⭐⭐⭐⭐⭐</div>
-            <span><b>$29.99</b></span>
+            <span class="latest__span--style2"><b>$29.99</b></span>
           </div>
         </div>
         <div class="latest__feature">
@@ -228,7 +242,7 @@
             <img src="book-6.jpeg" alt="" class="latest__feature--image" />
             <h1 class="latest__feature--heading">The 5 Second Rule</h1>
             <div class="rating">⭐⭐⭐</div>
-            <span><b>$39.99</b></span>
+            <span class="latest__span--style2"><b>$39.99</b></span>
           </div>
         </div>
         <div class="latest__feature">
@@ -236,7 +250,7 @@
             <img src="book-7.jpg" alt="" class="latest__feature--image" />
             <h1 class="latest__feature--heading">Your Next Five Moves</h1>
             <div class="rating">⭐⭐⭐⭐</div>
-            <span><b>$49.99</b></span>
+            <span class="latest__span--style2"><b>$49.99</b></span>
           </div>
         </div>
         <div class="latest__feature">
@@ -244,7 +258,7 @@
             <img src="book-8.jpeg" alt="" class="latest__feature--image" />
             <h1 class="latest__feature--heading">Mastery</h1>
             <div class="rating">⭐⭐⭐⭐⭐</div>
-            <span><b>$59.99</b></span>
+            <span class="latest__span--style2"><b>$59.99</b></span>
           </div>
         </div>
       </div>
