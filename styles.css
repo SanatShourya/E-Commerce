@@ -161,7 +161,6 @@ nav {
   left: 0;
 }
 
-
 .nav__links--white::after {
   content: "";
   position: absolute;
@@ -192,10 +191,10 @@ nav {
   font-size: 40px;
   text-align: center;
   border: none;
-  color:#02343f;
+  color: #02343f;
   display: none;
   margin-right: 25px;
-
+  cursor: pointer;
 }
 
 .menu__backdrop {
@@ -246,13 +245,13 @@ nav {
   top: 20px;
   padding: 8px;
   color: #fff;
+  cursor: pointer;
 }
 
 /* Landing */
 
 .heading {
   margin-bottom: 5px;
-  animation: fade_in 1000ms 600ms backwards;
   max-width: 450px;
   width: 100%;
 }
@@ -261,7 +260,6 @@ nav {
   margin-bottom: 15px;
   width: 100%;
   max-width: 500px;
-  animation: fade_in 1000ms 800ms backwards;
 }
 
 .aboutme {
@@ -469,8 +467,8 @@ nav {
 /* Latest Books */
 
 #latestbooks {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .latest__container {
@@ -515,7 +513,6 @@ nav {
   border-left: 0px;
   border-right: 0px;
 }
-
 
 .latest__feature--image:hover {
   transform: scale(1.03);
@@ -640,7 +637,6 @@ nav {
   font-size: 12px;
 }
 
-
 /* Responsiveness */
 
 @media (max-width: 768px) {
@@ -692,12 +688,16 @@ nav {
   }
 
   .featbooks__feature {
-    width: calc(100%/2);
+    width: calc(100% / 2);
     margin-bottom: 70px;
   }
 
   #featuredbooks {
     margin-bottom: -80px;
+  }
+
+  #latestbooks {
+    padding-bottom: 30px;
   }
 
   .latest__container {
@@ -709,33 +709,32 @@ nav {
   }
 
   .latest__feature {
-    width: calc(100%/2);
+    width: calc(100% / 2);
     margin-bottom: 60px;
   }
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   .nav__list--item {
     display: none;
   }
-  
+
   .btn__menu {
     display: block;
-    
   }
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
   .nav__logo {
     width: 40%;
     max-width: 50px;
   }
-  
+
   .nav__logo--title {
     font-size: 24px;
     padding-left: 0px;
   }
-  
+
   .nav__logo--subtitle {
     font-size: 11.5px;
     padding-left: 0px;
@@ -747,7 +746,6 @@ nav {
 
   .btn__menu {
     font-size: 28px;
-    
   }
 
   .aboutme__description {
@@ -796,8 +794,8 @@ nav {
     max-width: 435px;
   }
 
-  .featbooks__feature{
-    width: calc(100%/2);
+  .featbooks__feature {
+    width: calc(100% / 2);
     height: 330px;
   }
 
@@ -831,14 +829,12 @@ nav {
     font-size: 14px;
   }
 
-
-
   .latest__container {
     max-width: 435px;
   }
 
-  .latest__feature{
-    width: calc(100%/2);
+  .latest__feature {
+    width: calc(100% / 2);
     height: 330px;
   }
 
@@ -854,7 +850,6 @@ nav {
   .latest__feature--heading {
     font-size: 16px;
     max-width: 150px;
-    
   }
 
   .rating {

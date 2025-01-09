@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bookstyles.css" />
+    <script
+      src="https://kit.fontawesome.com/43eab3176c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script src="books.js"></script>
+  </head>
+
+  <body>
+    <!-- Landing Page -->
+    <section id="landing">
+      <nav>
+        <div class="nav__div">
+          <figure class="nav__logo--wrapper">
+            <img src="./assets/icons8-books-67.png" alt="" class="nav__logo" />
+            <div>
+              <h2 class="nav__logo--title">Library</h2>
+              <h4 class="nav__logo--subtitle">Founded 1955</h4>
+            </div>
+          </figure>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__list--item">
+            <a href="index.html" class="nav__links nav__link">Home</a>
+          </li>
+          <li class="nav__list--item">
+            <a href="index.html" class="nav__links nav__link">Contact</a>
+          </li>
+          <li class="nav__list--item nav__list--button">
+            <a href="index.html" class="books__color">Books</a>
+          </li>
+        </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul>
+            <li class="menu__list">
+              <a
+                href="index.html"
+                class="menu__link nav__links--white"
+                onclick="closeMenu()"
+                >Home</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                href="index.html"
+                class="menu__link nav__links--white"
+                onclick="closeMenu()"
+                >Books</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                href="index.html"
+                class="menu__link nav__links--white"
+                onclick="closeMenu()"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Main -->
+    <main>
+      <section id="books">
+        <div class="books">
+          <div class="heading__wrapper">
+            <h2 class="books__title">
+              <span class="span__features--title">All Books</span>
+            </h2>
+            <select onchange="filterBooks(event)">
+              <option disabled selected hidden>Filters</option>
+              <option value="LtoH">Pricing, Low to High</option>
+              <option value="HtoL">Pricing, High to Low</option>
+              <option value="Rating">Rating</option>
+            </select>
+          </div>
+          <div class="books__wrapper">
+            <div class="spinner__wrapper">
+                <i class="fas fa-spinner data__loading--spinner"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer__details">
+        <figure class="footer__logo--wrapper">
+          <img
+            src="./assets/Screenshot 2024-12-11 142331.png"
+            alt=""
+            class="footer__logo--image"
+          />
+          <div>
+            <h2 class="footer__logo--title">Library</h2>
+            <h4 class="footer__logo--subtitle">Founded 1955</h4>
+          </div>
+        </figure>
+        <div class="footer__links">
+          <a href="#landing" class="footer__anchor footer__link">Home</a>
+          <a href="" class="footer__anchor footer__link">About</a>
+          <a href="#featuredbooks" class="footer__anchor footer__link">Books</a>
+          <a href="" class="footer__anchor footer__link">Contact</a>
+        </div>
+        <p class="footer__para">
+          Copyright <span class="footer__logo">©</span> 2024 Library
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

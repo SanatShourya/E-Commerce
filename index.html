@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/43eab3176c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/43eab3176c.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
   </head>
   <body>
@@ -13,7 +16,7 @@
       <nav>
         <div class="nav__div">
           <figure class="nav__logo--wrapper">
-            <img src="icons8-books-67.png" alt="" class="nav__logo" />
+            <img src="./assets/icons8-books-67.png" alt="" class="nav__logo" />
             <div>
               <h2 class="nav__logo--title">Library</h2>
               <h4 class="nav__logo--subtitle">Founded 1955</h4>
@@ -28,7 +31,7 @@
             <a href="#contact" class="nav__links nav__link">Contact</a>
           </li>
           <li class="nav__list--item nav__list--button">
-            <a href="#featuredbooks" class="books__color">Books</a>
+            <a href="books.html" class="books__color">Books</a>
           </li>
         </ul>
         <button class="btn__menu" onclick="openMenu()">
@@ -39,9 +42,30 @@
             <i class="fas fa-times"></i>
           </button>
           <ul>
-            <li class="menu__list"><a href="#" class="menu__link nav__links--white" onclick="closeMenu()">Home</a></li>
-            <li class="menu__list"><a href="#featuredbooks" class="menu__link nav__links--white" onclick="closeMenu()">Books</a></li>
-            <li class="menu__list"><a  href="#" class="menu__link nav__links--white" onclick="closeMenu()">Contact</a></li>
+            <li class="menu__list">
+              <a
+                href="#"
+                class="menu__link nav__links--white"
+                onclick="closeMenu()"
+                >Home</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                href="books.html"
+                class="menu__link nav__links--white"
+                onclick="closeMenu()"
+                >Books</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                href="#"
+                class="menu__link nav__links--white"
+                onclick="closeMenu()"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -64,17 +88,16 @@
 
         <figure class="aboutme__display">
           <img
-            src="undraw_reading_time_re_phf7.svg"
+            src="./assets/undraw_reading_time_re_phf7.svg"
             alt=""
             class="aboutme__display--picture"
           />
         </figure>
       </div>
-      <img src="" alt="" />
     </section>
 
     <section id="features">
-      <img src="wave.svg" alt="" class="wave__features" />
+      <img src="./assets/wave.svg" alt="" class="wave__features" />
       <h1 class="section__heading">
         Why choose <span class="span__features--heading">Library</span>
       </h1>
@@ -82,7 +105,7 @@
         <div class="features__feature">
           <div class="features__feature--wrapper">
             <img
-              src="fast.svg"
+              src="./assets/fast.svg"
               alt=""
               class="features__feature--image features__image1"
             />
@@ -95,7 +118,7 @@
         <div class="features__feature">
           <div class="features__feature--wrapper">
             <img
-              src="book.svg"
+              src="./assets/book.svg"
               alt=""
               class="features__feature--image features__image2"
             />
@@ -108,7 +131,7 @@
         <div class="features__feature">
           <div class="features__feature--wrapper">
             <img
-              src="Screenshot 2024-12-07 161258.png"
+              src="./assets/Screenshot 2024-12-07 161258.png"
               alt=""
               class="features__feature--image features__image3"
             />
@@ -119,7 +142,7 @@
           </div>
         </div>
       </div>
-      <img src="wave.svg" alt="" class="wave__features--rotated" />
+      <img src="./assets/wave.svg" alt="" class="wave__features--rotated" />
     </section>
 
     <section id="featuredbooks">
@@ -130,7 +153,7 @@
         <div class="featbooks__feature">
           <div class="featbooks__feature--wrapper">
             <img
-              src="crack the coding interview.png"
+              src="./assets/crack the coding interview.png"
               alt=""
               class="featbooks__feature--image"
             />
@@ -147,7 +170,7 @@
         <div class="featbooks__feature">
           <div class="featbooks__feature--wrapper">
             <img
-              src="atomic habits.jpg"
+              src="./assets/atomic habits.jpg"
               alt=""
               class="featbooks__feature--image"
             />
@@ -162,7 +185,7 @@
         <div class="featbooks__feature">
           <div class="featbooks__feature--wrapper">
             <img
-              src="david goggins.jpeg"
+              src="./assets/david goggins.jpeg"
               alt=""
               class="featbooks__feature--image"
             />
@@ -177,7 +200,7 @@
         <div class="featbooks__feature">
           <div class="featbooks__feature--wrapper">
             <img
-              src="deep work.jpeg"
+              src="./assets/deep work.jpeg"
               alt=""
               class="featbooks__feature--image"
             />
@@ -199,66 +222,122 @@
       <div class="latest__container">
         <div class="latest__feature">
           <div class="latest__feature--wrapper">
-            <img src="book-1.jpeg" alt="" class="latest__feature--image" />
+            <img
+              src="./assets/book-1.jpeg"
+              alt=""
+              class="latest__feature--image"
+            />
             <h1 class="latest__feature--heading">The 10X Rule</h1>
             <div class="rating">⭐⭐⭐</div>
-            <span class="latest__span--style2"><b>$59.99</b></span>
+            <div class="featbooks__span--container">
+              <span class="featbooks__span--style">$39.99</span
+              ><span class="featbooks__span--style2"><b>$22.99</b></span>
+            </div>
           </div>
         </div>
         <div class="latest__feature">
           <div class="latest__feature--wrapper">
-            <img src="book-2.jpeg" alt="" class="latest__feature--image" />
+            <img
+              src="./assets/book-2.jpeg"
+              alt=""
+              class="latest__feature--image"
+            />
             <h1 class="latest__feature--heading">Be Obssessed Or Be Average</h1>
             <div class="rating">⭐⭐⭐⭐</div>
-            <span class="latest__span--style2"><b>$49.99</b></span>
+            <div class="featbooks__span--container">
+              <span class="featbooks__span--style">$39.99</span
+              ><span class="featbooks__span--style2"><b>$22.99</b></span>
+            </div>
           </div>
         </div>
         <div class="latest__feature">
           <div class="latest__feature--wrapper">
-            <img src="book-3.jpeg" alt="" class="latest__feature--image" />
+            <img
+              src="./assets/book-3.jpeg"
+              alt=""
+              class="latest__feature--image"
+            />
             <h1 class="latest__feature--heading">Rich Dad Poor Dad</h1>
             <div class="rating">⭐⭐⭐⭐⭐</div>
-            <span class="latest__span--style2"><b>$39.99</b></span>
+            <div class="featbooks__span--container">
+              <span class="featbooks__span--style">$39.99</span
+              ><span class="featbooks__span--style2"><b>$22.99</b></span>
+            </div>
           </div>
         </div>
         <div class="latest__feature">
           <div class="latest__feature--wrapper">
-            <img src="book-4.jpeg" alt="" class="latest__feature--image" />
+            <img
+              src="./assets/book-4.jpeg"
+              alt=""
+              class="latest__feature--image"
+            />
             <h1 class="latest__feature--heading">Cashflow Quadrant</h1>
             <div class="rating">⭐⭐⭐⭐</div>
-            <span class="latest__span--style2"><b>$29.99</b></span>
+            <div class="featbooks__span--container">
+              <span class="featbooks__span--style">$39.99</span
+              ><span class="featbooks__span--style2"><b>$22.99</b></span>
+            </div>
           </div>
         </div>
         <div class="latest__feature">
           <div class="latest__feature--wrapper">
-            <img src="book-5.jpeg" alt="" class="latest__feature--image" />
+            <img
+              src="./assets/book-5.jpeg"
+              alt=""
+              class="latest__feature--image"
+            />
             <h1 class="latest__feature--heading">48 Laws of Power</h1>
             <div class="rating">⭐⭐⭐⭐⭐</div>
-            <span class="latest__span--style2"><b>$29.99</b></span>
+            <div class="featbooks__span--container">
+              <span class="featbooks__span--style">$39.99</span
+              ><span class="featbooks__span--style2"><b>$22.99</b></span>
+            </div>
           </div>
         </div>
         <div class="latest__feature">
           <div class="latest__feature--wrapper">
-            <img src="book-6.jpeg" alt="" class="latest__feature--image" />
+            <img
+              src="./assets/book-6.jpeg"
+              alt=""
+              class="latest__feature--image"
+            />
             <h1 class="latest__feature--heading">The 5 Second Rule</h1>
             <div class="rating">⭐⭐⭐</div>
-            <span class="latest__span--style2"><b>$39.99</b></span>
+            <div class="featbooks__span--container">
+              <span class="featbooks__span--style">$39.99</span
+              ><span class="featbooks__span--style2"><b>$22.99</b></span>
+            </div>
           </div>
         </div>
         <div class="latest__feature">
           <div class="latest__feature--wrapper">
-            <img src="book-7.jpg" alt="" class="latest__feature--image" />
+            <img
+              src="./assets/book-7.jpg"
+              alt=""
+              class="latest__feature--image"
+            />
             <h1 class="latest__feature--heading">Your Next Five Moves</h1>
             <div class="rating">⭐⭐⭐⭐</div>
-            <span class="latest__span--style2"><b>$49.99</b></span>
+            <div class="featbooks__span--container">
+              <span class="featbooks__span--style">$39.99</span
+              ><span class="featbooks__span--style2"><b>$22.99</b></span>
+            </div>
           </div>
         </div>
         <div class="latest__feature">
           <div class="latest__feature--wrapper">
-            <img src="book-8.jpeg" alt="" class="latest__feature--image" />
+            <img
+              src="./assets/book-8.jpeg"
+              alt=""
+              class="latest__feature--image"
+            />
             <h1 class="latest__feature--heading">Mastery</h1>
             <div class="rating">⭐⭐⭐⭐⭐</div>
-            <span class="latest__span--style2"><b>$59.99</b></span>
+            <div class="featbooks__span--container">
+              <span class="featbooks__span--style">$39.99</span
+              ><span class="featbooks__span--style2"><b>$22.99</b></span>
+            </div>
           </div>
         </div>
       </div>
@@ -279,7 +358,7 @@
       <div class="footer__details">
         <figure class="footer__logo--wrapper">
           <img
-            src="Screenshot 2024-12-11 142331.png"
+            src="./assets/Screenshot 2024-12-11 142331.png"
             alt=""
             class="footer__logo--image"
           />
