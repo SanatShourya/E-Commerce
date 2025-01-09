@@ -396,7 +396,7 @@ nav {
 
 #featuredbooks {
   background-color: #f0edcc;
-  padding-bottom: 45px;
+  padding-bottom: 55px;
   margin-top: -30px;
   z-index: 20;
 }
@@ -429,9 +429,10 @@ nav {
 .featbooks__feature--image {
   width: 200px;
   height: 300px;
-  object-fit: contain;
+  object-fit: cover;
   cursor: not-allowed;
   transition: all 300ms ease;
+  border: 1px solid black;
 }
 
 .featbooks__feature--image:hover {
@@ -500,10 +501,21 @@ nav {
 
 .latest__feature--image {
   width: 200px;
-  object-fit: contain;
+  height: 300px;
+  object-fit: cover;
   cursor: not-allowed;
   transition: all 300ms ease;
 }
+
+.latest__feature:not(:first-child) .latest__feature--image {
+  border: 1px solid black;
+}
+
+.latest__feature:nth-of-type(7) .latest__feature--image {
+  border-left: 0px;
+  border-right: 0px;
+}
+
 
 .latest__feature--image:hover {
   transform: scale(1.03);
