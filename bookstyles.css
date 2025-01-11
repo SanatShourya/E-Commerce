@@ -97,6 +97,20 @@ select {
   color: #7342d6;
 }
 
+
+.books__feature .books__feature--image {
+  border: 1px solid black;
+}
+
+[data-name="The 10X Rule"] .books__feature--image {
+  border: 0px;
+}
+
+[data-name="Your Next Five Moves"] .books__feature--image {
+  border-left: 1px;
+  border-right: 1px;
+}
+
 .fa-spinner {
   animation: rotate 600ms infinite linear;
 }
@@ -126,3 +140,40 @@ select {
 .fa-spinner {
   font-size: 50px;
 }
+
+@media (max-width: 768px) {
+  .books__feature {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 0px;
+    height: 390px;
+    margin-bottom: 85px;
+  }
+
+  main {
+    background-color: #f0edcc;
+    height: 2050px;
+  }
+}
+
+@media (max-width: 550px) {
+  .books__feature {
+    width: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 0px;
+    height: 390px;
+    margin-bottom: 85px;
+  }
+
+  main {
+    background-color: #f0edcc;
+    height: 3000px;
+  }
+}
+
+
+

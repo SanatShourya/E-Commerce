@@ -21,7 +21,7 @@ async function renderBooks(filter) {
 
     const booksHTML = books.map(book => {
         return `
-        <div class="books__feature">
+        <div class="books__feature" data-name="${book.title}">
           <div class="books__feature--wrapper">
             <img
               src="${book.url}"
@@ -159,6 +159,14 @@ function getBooks() {
             originalPrice: 30,
             salePrice: null,
             rating: 4.5,
+          },
+          {
+            id: 12,
+            title: "Can't Hurt Me",
+            url: "assets/david goggins.jpeg",
+            originalPrice: 35,
+            salePrice: 32,
+            rating: 5,
           }
         ])
     }, 1000));
